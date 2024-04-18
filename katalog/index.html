@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+    -->
+    <title>MotoCare - Ride Smooth</title>
+    <meta name="title" content="MotoCare - Ride Smooth">
+
+
+    <!-- 
+    - favicon
+    -->
+    <link rel="shortcut icon" href="assets/images/web-logo.png">
+        
+
+    <!-- 
+    - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+
+
+    <!-- 
+    - material icon font
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- <link rel="stylesheet" href="assets/lib/fontawesome/css/all.css" /> -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="assets/lib/fontawesome/js/all.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- 
+    - custom css link
+    -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+
+    
+    
+  <!-- 
+    NAVBAR
+   -->
+    
+  </head>
+  <body style="background-image: url('./assets/images/hero-banner.png')">
+    <header class="header">
+      <div class="container">
+  
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="128" height="63" alt="autofix home">
+        </a>
+  
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+  
+            <li>
+              <a href="/home/index.html" class="navbar-link">Home</a>
+            </li>
+  
+            <li>
+              <a href="/about/index.html" class="navbar-link">Tentang Kami</a>
+            </li>
+  
+            <li>
+              <a href="/booking/index.html" class="navbar-link">Booking</a>
+            </li>
+  
+            <li>
+              <a href="/katalog/index.html" class="navbar-link">Katalog</a>
+            </li>
+  
+            <li>
+              <a href="/tutorial/index.html" class="navbar-link">Tutorial</a>
+            </li>
+  
+            <li>
+              <a href="/riwayat/index.html" class="navbar-link">Riwayat Servis</a>
+            </li>
+  
+          </ul>
+        </nav>
+  
+        <a href="/loginsignup/index.html" class="btn btn-primary">
+          <span class="span">SIGN IN / SIGN UP</span>
+  
+          <span class="material-symbols-rounded">arrow_forward</span>
+        </a>
+  
+  
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <span class="nav-toggle-icon icon-1"></span>
+          <span class="nav-toggle-icon icon-2"></span>
+          <span class="nav-toggle-icon icon-3"></span>
+        </button>
+  
+      </div>
+    </header>
+    
+    <!-- 
+    KATALOG
+   -->
+
+    <main>
+      <article>
+        <section>
+          <div class="container">
+            <section class="form-katalog">
+                  <!-- Sidebar -->
+                  <div class="left-panel">
+                    <!-- Elemen-elemen sidebar di sini -->
+                    <div id="merk">
+                        <div class="title">
+                            <div class="MerkMotor" id="MerkMotor">Merk Motor</div>
+                            <input class="input" id="cari-merk" placeholder="Cari merk Motor"/>
+                        </div>
+                        
+                        <div id="merk-list">
+                            <div class="merk" id="Honda">Honda</div>
+                            <div class="merk" id="Yamaha">Yamaha</div>
+                            <div class="merk" id="Suzuki">Suzuki</div>
+                            <div class="merk" id="Kawasaki">Kawasaki</div>
+                            <div class="merk" id="BMW">BMW</div>
+                            <div class="merk" id="KTM">KTM</div>
+                            <div class="merk" id="Husqvarna">Husqvarna</div>
+                        </div>
+                      
+                    </div>
+                    
+                    <div id="lineup">
+                        <div class="title">
+                            <div class="LineupProduk">Lineup Produk</div>
+                            <input class="input" id="cari-lineup" placeholder="Cari lineup produk" />
+                            <!-- <div class="Line12"></div> -->
+                        </div>
+                        <div id="lineup-list"></div>
+                    </div>
+                  </div>
+                <!-- Konten utama -->
+                  <div class="right-panel" id="Konten">
+                      <!-- Gambar -->
+                      <img id="gambar-produk" src="assets/images/logo2.png" class="motor-image" />
+                      <!-- Judul -->
+                      <div class="title-deskripsi" id="title"></div>
+                      <!-- Deskripsi -->
+                      <p class="description" id="description">
+                      </p>
+                  </div>
+              </div>
+            </section>
+        </section>
+      </article>
+    </main>
+   
+        
+
+    <!-- 
+    FOOTER
+   -->
+        
+    <footer class="footer">
+        <div class="footer-top section">
+          <div class="container">
+            <div class="footer-brand">
+
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.png" width="128" height="63" alt="autofix home">
+              </a>
+    
+              <p class="footer-text">
+                Ikuti kami di sosial media untuk berita terbaru dan penawaran eksklusif dari MotoCare.
+              </p>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <img src="./assets/images/facebook.svg" alt="facebook">
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <img src="./assets/images/instagram.svg" alt="instagram">
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <img src="./assets/images/twitter.svg" alt="twitter">
+                  </a>
+                </li>
+    
+              </ul>
+    
+            </div>
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="h3">Jam Buka</p>
+              </li>
+    
+              <li>
+                <p class="p">Senin – Kamis</p>
+    
+                <span class="span">08.00 – 21.00</span>
+              </li>
+    
+              <li>
+                <p class="p">Jumat</p>
+    
+                <span class="span">13.30 – 23.00</span>
+              </li>
+    
+              <li>
+                <p class="p">Sabtu – Minggu</p>
+    
+                <span class="span">08.00 – 23.00</span>
+              </li>
+    
+            </ul>
+
+            <ul class="footer-list">
+
+              <li>
+                <p class="h3">Info Kontak</p>
+              </li>
+    
+              <li>
+                <a href="tel:+01234567890" class="footer-link">
+                  <span class="material-symbols-rounded">call</span>
+    
+                  <span class="span">+62 2 3456 7890</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="mailto:info@autofix.com" class="footer-link">
+                  <span class="material-symbols-rounded">mail</span>
+    
+                  <span class="span">info@motocare.com</span>
+                </a>
+              </li>
+    
+              <li>
+                <address class="footer-link address">
+                  <span class="material-symbols-rounded">location_on</span>
+    
+                  <span class="span">22 CibUWU Street Bandung, 3100, Indonesia</span>
+                </address>
+              </li>
+    
+            </ul>
+
+          </div>
+
+          <img src="./assets/images/footer-shape-3.png" width="637" height="173" loading="lazy" alt="Shape"
+          class="shape shape-3 move-anim">
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+
+          <p class="copyright">Copyright 2024, motocare All Rights Reserved.</p>
+
+          <img src="./assets/images/footer-shape-2.png" width="778" height="335" loading="lazy" alt="Shape"
+            class="shape shape-2">
+
+          <img src="./assets/images/footer-shape-1.png" width="805" height="652" loading="lazy" alt="Red Car"
+            class="shape shape-1 move-anim">
+
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
