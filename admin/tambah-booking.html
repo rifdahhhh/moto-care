@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style-tambah-booking.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img class="logo-img" src="./assets/img/logo.png" alt="" />
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link">
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-pengguna.html" class="nav-link">
+            <span class="nav-item">Manajemen Pengguna</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-booking.html" class="nav-link active">
+            <span class="nav-item">Manajemen Booking</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-katalog.html" class="nav-link">
+            <span class="nav-item">Manajemen Katalog</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-tutorial.html" class="nav-link">
+            <span class="nav-item">Manajemen Tutorial</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logout nav-link">
+            <span class="nav-item">Log Out </span>
+            <i class="bx bx-log-out" style="color: #fffafa"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1 class="title">MANAJEMEN BOOKING</h1>
+
+      <div class="content-wrapper">
+        <div class="form-wrapper">
+          <h1 class="title-form">Form Tambah Booking</h1>
+          <form action="#" method="post" id="form">
+            <div class="row col-3">
+              <div>
+                <label for="nama">Nama</label>
+                <input
+                  type="text"
+                  name="nama"
+                  id="nama"
+                  placeholder="John Doe"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="no_telepon">No Telepon</label>
+                <input
+                  type="text"
+                  name="no_telepon"
+                  id="no_telepon"
+                  placeholder="08138394573945"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row col-3">
+              <div>
+                <label for="jenis_layanan">Jenis Layanan</label>
+                <select name="jenis_layanan" id="jenis_layanan">
+                  <option selected disabled>Pilih</option>
+                  <option value="Service Rutin">Service Rutin</option>
+                  <option value="Perbaikan Khusus">Perbaikan Khusus</option>
+                  <option value="Tune Up / Bore Up">Tune Up / Bore Up</option>
+                  <option value="Cek Kendaraan">Cek Kendaraan</option>
+                </select>
+              </div>
+              <div>
+                <label for="merk_motor">Merk Motor</label>
+                <input
+                  type="text"
+                  name="merk_motor"
+                  id="merk_motor"
+                  autocomplete="off"
+                  required
+                  placeholder="Honda"
+                />
+              </div>
+
+              <div>
+                <label for="model_motor">Model Motor</label>
+                <input
+                  type="text"
+                  name="model_motor"
+                  id="model_motor"
+                  autocomplete="off"
+                  required
+                  placeholder="CBR 250R"
+                />
+              </div>
+            </div>
+
+            <div class="row col-3">
+              <div>
+                <label for="tahun_pembuatan">Tahun Pembuatan</label>
+                <input
+                  type="text"
+                  name="tahun_pembuatan"
+                  id="tahun_pembuatan"
+                  autocomplete="off"
+                  required
+                  placeholder="2019"
+                />
+              </div>
+
+              <div>
+                <label for="nomor_polisi">Nomor Polisi / Nomor Plat</label>
+                <input
+                  type="text"
+                  name="nomor_polisi"
+                  id="nomor_polisi"
+                  autocomplete="off"
+                  required
+                  placeholder="B 1234 CDF"
+                />
+              </div>
+              <div>
+                <label for="km_kendaraan">kilometer Kendaraan</label>
+                <input
+                  type="number"
+                  name="km_kendaraan"
+                  id="km_kendaraan"
+                  autocomplete="off"
+                  required
+                  placeholder="10000"
+                />
+              </div>
+            </div>
+
+            <div class="row col-2">
+              <div>
+                <label for="jadwal_booking">Jadwal Booking</label>
+                <input
+                  type="date"
+                  name="jadwal_booking"
+                  id="jadwal_booking"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div>
+                <label for="catatan">Catatan</label>
+                <textarea
+                  name="catatan"
+                  id="catatan"
+                  rows="4"
+                  placeholder="catatan Tambahan"
+                  autocomplete="off"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="btn-wrapper">
+              <a href="manajemen-booking.html" class="btn-back"
+                ><i class="bx bx-arrow-back"></i> KEMBALI</a
+              >
+              <button type="submit" class="btn-submit">
+                <i class="bx bxs-save"></i> SUBMIT
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="assets/js/script-manage-tutorial.js"></script> -->
+  </body>
+</html>

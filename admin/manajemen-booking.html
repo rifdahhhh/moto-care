@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style-manage-booking.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img class="logo-img" src="./assets/img/logo.png" alt="" />
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link">
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-pengguna.html" class="nav-link">
+            <span class="nav-item">Manajemen Pengguna</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-booking.html" class="nav-link active">
+            <span class="nav-item">Manajemen Booking</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-katalog.html" class="nav-link">
+            <span class="nav-item">Manajemen Katalog</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-tutorial.html" class="nav-link">
+            <span class="nav-item">Manajemen Tutorial</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logout nav-link">
+            <span class="nav-item">Log Out </span>
+            <i class="bx bx-log-out" style="color: #fffafa"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1 class="title">MANAJEMEN BOOKING</h1>
+
+      <div class="table-wrapper">
+        <h1 class="title-table">Daftar Booking</h1>
+        <div class="sub-wrapper">
+          <a href="tambah-booking.html" class="btn-add"
+            ><i class="bx bx-plus"></i> Tambah Booking</a
+          >
+          <form action="#" id="form-search">
+            <span class="icon-search"><i class="bx bx-search"></i></span>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Cari Booking"
+              autocomplete="off"
+            />
+          </form>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID Booking</th>
+              <th>Nama Pelanggan</th>
+              <th>Jenis Layanan</th>
+              <th>Status Booking</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>John Doe</td>
+              <td>Service rutin</td>
+              <td><span class="status-diproses">Diproses</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="101"
+                  data-nama="John Doe"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>Jane Smith</td>
+              <td>perbaikan khusus</td>
+              <td><span class="status-selesai">Selesai</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="102"
+                  data-nama="Jane Smith"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>David Johnson</td>
+              <td>tune up/bore up</td>
+              <td><span class="status-diproses">Diproses</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="103"
+                  data-nama="David Johnson"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>104</td>
+              <td>Alice Brown</td>
+              <td>cek kendaraan</td>
+              <td><span class="status-dibatalkan">Dibatalkan</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="104"
+                  data-nama="Alice Brown"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>105</td>
+              <td>Sarah Wilson</td>
+              <td>Service rutin</td>
+              <td><span class="status-diproses">Diproses</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="105"
+                  data-nama="Sarah Wilson"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>106</td>
+              <td>Michael Lee</td>
+              <td>perbaikan khusus</td>
+              <td><span class="status-diproses">Diproses</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="106"
+                  data-nama="Michael Lee"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>107</td>
+              <td>Emily Clark</td>
+              <td>tune up/bore up</td>
+              <td><span class="status-selesai">Selesai</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="107"
+                  data-nama="Emily Clark"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>108</td>
+              <td>Christopher Rodriguez</td>
+              <td>cek kendaraan</td>
+              <td><span class="status-diproses">Diproses</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="108"
+                  data-nama="Christopher Rodriguez"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>109</td>
+              <td>Olivia Hall</td>
+              <td>Service rutin</td>
+              <td><span class="status-selesai">Selesai</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="109"
+                  data-nama="Olivia Hall"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>110</td>
+              <td>James Taylor</td>
+              <td>perbaikan khusus</td>
+              <td><span class="status-dibatalkan">Dibatalkan</span></td>
+              <td>
+                <a href="detail-booking.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-booking.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="110"
+                  data-nama="James Taylor"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <a href="#" class="page-item">&laquo;</a>
+          <a href="#" class="page-item">&lsaquo;</a>
+          <a href="#" class="page-item">1</a>
+          <a href="#" class="page-item">2</a>
+          <a href="#" class="page-item">3</a>
+          <a href="#" class="page-item">4</a>
+          <a href="#" class="page-item">5</a>
+          <a href="#" class="page-item">&rsaquo;</a>
+          <a href="#" class="page-item">&raquo;</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const btnDelete = document.querySelectorAll(".btn-delete");
+      btnDelete.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          const id = this.getAttribute("data-id");
+          const nama = this.getAttribute("data-nama");
+
+          const confirmDelete = confirm(
+            `Apakah anda yakin ingin menghapus booking ${nama}?`
+          );
+
+          if (confirmDelete) {
+            window.location.href = `#`;
+          }
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>

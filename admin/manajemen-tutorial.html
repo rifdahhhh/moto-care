@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style-manage-tutorial.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img class="logo-img" src="./assets/img/logo.png" alt="" />
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link">
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-pengguna.html" class="nav-link">
+            <span class="nav-item">Manajemen Pengguna</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-booking.html" class="nav-link">
+            <span class="nav-item">Manajemen Booking</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-katalog.html" class="nav-link">
+            <span class="nav-item">Manajemen Katalog</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-tutorial.html" class="nav-link active">
+            <span class="nav-item">Manajemen Tutorial</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logout nav-link">
+            <span class="nav-item">Log Out </span>
+            <i class="bx bx-log-out" style="color: #fffafa"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1 class="title">KATALOG & TUTORIAL</h1>
+
+      <div class="content-wrapper">
+        <div class="table-wrapper">
+          <h1 class="title-table">Daftar Tutorial</h1>
+
+          <form action="#" id="form-search">
+            <span class="icon-search"><i class="bx bx-search"></i></span>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Cari Tutorial"
+              autocomplete="off"
+            />
+          </form>
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title-column">Cara Merawat Motor Agar Awet</td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="1"
+                    data-title="Cara Merawat Motor Agar Awet"
+                    data-link="https://www.youtube.com/embed/SUJi--0486s?si=Wnye2KVb7-JGdZ5N"
+                    data-deskripsi="Cara merawat motor matic agar awet, wajib lakukan ini di rumah, service motor matic, perawatan motor matic, cara merawat motor matic di rumah."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="1"
+                    data-title="Cara Merawat Motor Agar Awet"
+                    data-link="https://www.youtube.com/embed/SUJi--0486s?si=Wnye2KVb7-JGdZ5N"
+                    data-deskripsi="Cara merawat motor matic agar awet, wajib lakukan ini di rumah, service motor matic, perawatan motor matic, cara merawat motor matic di rumah."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="1"
+                    data-title="Cara Merawat Motor Agar Awet"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  CARA BELAJAR MOTOR MATIC UNTUK PEMULA
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="2"
+                    data-title="CARA BELAJAR MOTOR MATIC UNTUK PEMULA"
+                    data-link="https://www.youtube.com/embed/k8hn9SWh_ow?si=91VUAouocG0Em-rR"
+                    data-deskripsi="Cara belajar motor matic untuk pemula, 5 menit dijamin bisa. Belajar motor matic, belajar motor manual, belajar motor koping. Dibahas tuntas melalui video ini."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="2"
+                    data-title="CARA BELAJAR MOTOR MATIC UNTUK PEMULA"
+                    data-link="https://www.youtube.com/embed/k8hn9SWh_ow?si=91VUAouocG0Em-rR"
+                    data-deskripsi="Cara belajar motor matic untuk pemula, 5 menit dijamin bisa. Belajar motor matic, belajar motor manual, belajar motor koping. Dibahas tuntas melalui video ini."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="2"
+                    data-title="CARA BELAJAR MOTOR MATIC UNTUK PEMULA"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">Belajar Naik Motor Kopling Manual</td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="3"
+                    data-title="Belajar Naik Motor Kopling Manual"
+                    data-link="https://www.youtube.com/embed/Jb1Wy5eTdHM?si=dI7Mar-UNfZDduk1"
+                    data-deskripsi="Belajar motor yang dilengkapi dengan kopling manual sebenarnya mudah jika kalian mengetahui triknya. Dalam video kali ini juga dibahas beberapa kesalahan yang biasa dilakukan para pemotor ketika belajar motor dengan kopling manual."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="3"
+                    data-title="Belajar Naik Motor Kopling Manual"
+                    data-link="https://www.youtube.com/embed/Jb1Wy5eTdHM?si=dI7Mar-UNfZDduk1"
+                    data-deskripsi="Belajar motor yang dilengkapi dengan kopling manual sebenarnya mudah jika kalian mengetahui triknya. Dalam video kali ini juga dibahas beberapa kesalahan yang biasa dilakukan para pemotor ketika belajar motor dengan kopling manual."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="3"
+                    data-title="Belajar Naik Motor Kopling Manual"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">CARA BERBONCENGAN MOTOR YG AMAN</td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="4"
+                    data-title="CARA BERBONCENGAN MOTOR YG AMAN"
+                    data-link="https://www.youtube.com/embed/U5R39jHu8go?si=Z7oyYrK-dvetNqdX"
+                    data-deskripsi="Cara berboncengan motor yg aman, belajar motor matic bagi pemula, tips boncengan motor yg benar, cara boncengan naik motor."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="4"
+                    data-title="CARA BERBONCENGAN MOTOR YG AMAN"
+                    data-link="https://www.youtube.com/embed/U5R39jHu8go?si=Z7oyYrK-dvetNqdX"
+                    data-deskripsi="Cara berboncengan motor yg aman, belajar motor matic bagi pemula, tips boncengan motor yg benar, cara boncengan naik motor."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="4"
+                    data-title="CARA BERBONCENGAN MOTOR YG AMAN"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  Nama nama mesin dan part motor lengkap
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="5"
+                    data-title="Nama nama mesin dan part motor lengkap"
+                    data-link="https://www.youtube.com/embed/DCHJMga9kLE?si=8pkoT8JxC-k8mveZ"
+                    data-deskripsi="Pengenalan nama-nama mesin sepeda motor lengkap beserta fungsinya, dan kerusakan yang mungkin timbul, serta cara mengatasinya."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="5"
+                    data-title="Nama nama mesin dan part motor lengkap"
+                    data-link="https://www.youtube.com/embed/DCHJMga9kLE?si=8pkoT8JxC-k8mveZ"
+                    data-deskripsi="Pengenalan nama-nama mesin sepeda motor lengkap beserta fungsinya, dan kerusakan yang mungkin timbul, serta cara mengatasinya."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="5"
+                    data-title="Nama nama mesin dan part motor lengkap"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  CARA MENGATUR KOPLING MOTOR DI JALAN MACET
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="6"
+                    data-title="CARA MENGATUR KOPLING MOTOR DI JALAN MACET"
+                    data-link="https://www.youtube.com/embed/eMQQh7B-cnY?si=uaySag1dcQKBUdR4"
+                    data-deskripsi="Cara mengatur kopling motor di jalan macet, cara belajar motor kopling pemula di jalan raya macet."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="6"
+                    data-title="CARA MENGATUR KOPLING MOTOR DI JALAN MACET"
+                    data-link="https://www.youtube.com/embed/eMQQh7B-cnY?si=uaySag1dcQKBUdR4"
+                    data-deskripsi="Cara mengatur kopling motor di jalan macet, cara belajar motor kopling pemula di jalan raya macet."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="6"
+                    data-title="CARA MENGATUR KOPLING MOTOR DI JALAN MACET"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  CARA MENGATASI MASALAH KARBURATOR SEPEDA MOTOR
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="7"
+                    data-title="CARA MENGATASI MASALAH KARBURATOR SEPEDA MOTOR"
+                    data-link="https://www.youtube.com/embed/C5UVnTe4fRA?si=-82NN40TXYwyBr9K"
+                    data-deskripsi="Berikut ini adalah video cara kerja karburator dan mengenal komponen yang ada beserta fungsinya masing masing, agar kamu dapat menseting sendiri karburator yang ada di sepeda motor kamu. Di video ini juga diajarkan bagaimana cara membaca pembakaran dari busi, dan bagaimana cara mengatasi apabila karburator kamu terjadi masalah."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="7"
+                    data-title="CARA MENGATASI MASALAH KARBURATOR SEPEDA MOTOR"
+                    data-link="https://www.youtube.com/embed/C5UVnTe4fRA?si=-82NN40TXYwyBr9K"
+                    data-deskripsi="Berikut ini adalah video cara kerja karburator dan mengenal komponen yang ada beserta fungsinya masing masing, agar kamu dapat menseting sendiri karburator yang ada di sepeda motor kamu. Di video ini juga diajarkan bagaimana cara membaca pembakaran dari busi, dan bagaimana cara mengatasi apabila karburator kamu terjadi masalah."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="7"
+                    data-title="CARA MENGATASI MASALAH KARBURATOR SEPEDA MOTOR"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">16 POINT PENTING SERVICE MOTOR</td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="8"
+                    data-title="16 POINT PENTING SERVICE MOTOR"
+                    data-link="https://www.youtube.com/embed/-7R66xrA5x4?si=_0xJG0xs4N_o7Y75"
+                    data-deskripsi="Pada video ini kami memperagakan urutan 16 poin service ringan sepeda motor untuk tipe transmisi manual, terdapat variasi jumlah poin servis di masing-masing bengkel sepeda motor, video ini hanyalah salah satu contoh atau referensi dalam melakukan servis / perawatan rutin yang dapat disesuaikan dengan kebutuhan."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="8"
+                    data-title="16 POINT PENTING SERVICE MOTOR"
+                    data-link="https://www.youtube.com/embed/-7R66xrA5x4?si=_0xJG0xs4N_o7Y75"
+                    data-deskripsi="Pada video ini kami memperagakan urutan 16 poin service ringan sepeda motor untuk tipe transmisi manual, terdapat variasi jumlah poin servis di masing-masing bengkel sepeda motor, video ini hanyalah salah satu contoh atau referensi dalam melakukan servis / perawatan rutin yang dapat disesuaikan dengan kebutuhan."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="8"
+                    data-title="16 POINT PENTING SERVICE MOTOR"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  Kesalahan Saat Belajar Motor Kopling
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="9"
+                    data-title="Kesalahan Saat Belajar Motor Kopling"
+                    data-link="https://www.youtube.com/embed/MYVdRHBkl0U?si=l1RvRwz_b10RuEJa"
+                    data-deskripsi="Di video ini kami bahas video cara belajar naik motor kopling manual. Buat kalian yang baru belajar naik motor kopling manual, ada beberapa keasalahan yang sering dilakukan. Kesalahan-kesalahan ini kerap bikin kalian panik ketika di jalan karena sering membuat motor menjadi mati mendadak ketika digunakan."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="9"
+                    data-title="Kesalahan Saat Belajar Motor Kopling"
+                    data-link="https://www.youtube.com/embed/MYVdRHBkl0U?si=l1RvRwz_b10RuEJa"
+                    data-deskripsi="Di video ini kami bahas video cara belajar naik motor kopling manual. Buat kalian yang baru belajar naik motor kopling manual, ada beberapa keasalahan yang sering dilakukan. Kesalahan-kesalahan ini kerap bikin kalian panik ketika di jalan karena sering membuat motor menjadi mati mendadak ketika digunakan."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="9"
+                    data-title="Kesalahan Saat Belajar Motor Kopling"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  TIPS MERAWAT SEPEDA MOTOR VARIO 125 2024 AGAR TETAP AWET DAN
+                  MULUS
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="10"
+                    data-title="TIPS MERAWAT SEPEDA MOTOR VARIO 125 2024 AGAR TETAP AWET DAN MULUS"
+                    data-link="https://www.youtube.com/embed/ohp67LsfyoI?si=1XySxnKBMb-YEb4z"
+                    data-deskripsi="Dalam video ini, kami akan membagikan serangkaian tips dan trik terbaik untuk menjaga Sepeda Motor Vario 125 edisi 2024 Anda tetap dalam kondisi prima. Mulai dari pembersihan rutin, pengecekan oli, hingga tips penyimpanan yang tepat, kami akan memandu Anda melalui langkah-langkah penting untuk memastikan motor Anda selalu siap untuk perjalanan berikutnya."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="10"
+                    data-title="TIPS MERAWAT SEPEDA MOTOR VARIO 125 2024 AGAR TETAP AWET DAN MULUS"
+                    data-link="https://www.youtube.com/embed/ohp67LsfyoI?si=1XySxnKBMb-YEb4z"
+                    data-deskripsi="Dalam video ini, kami akan membagikan serangkaian tips dan trik terbaik untuk menjaga Sepeda Motor Vario 125 edisi 2024 Anda tetap dalam kondisi prima. Mulai dari pembersihan rutin, pengecekan oli, hingga tips penyimpanan yang tepat, kami akan memandu Anda melalui langkah-langkah penting untuk memastikan motor Anda selalu siap untuk perjalanan berikutnya."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="10"
+                    data-title="TIPS MERAWAT SEPEDA MOTOR VARIO 125 2024 AGAR TETAP AWET DAN MULUS"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <!-- <tr>
+                <td class="title-column">
+                  Tips Meninggalkan Motor Jangka Waktu Lama
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="11"
+                    data-title="Tips Meninggalkan Motor Jangka Waktu Lama"
+                    data-link="https://www.youtube.com/embed/yEy7_7LwMm8?si=usv8dh38qT3CuiCZ"
+                    data-deskripsi="persiapan motor untuk ditinggal lama harus memperhatikan beberapa point penting. disamping aki, mesin harus menjadi pokok utama, berikut secara lengkapnya."
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="11"
+                    data-title="Tips Meninggalkan Motor Jangka Waktu Lama"
+                    data-link="https://www.youtube.com/embed/yEy7_7LwMm8?si=usv8dh38qT3CuiCZ"
+                    data-deskripsi="persiapan motor untuk ditinggal lama harus memperhatikan beberapa point penting. disamping aki, mesin harus menjadi pokok utama, berikut secara lengkapnya."
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="11"
+                    data-title="Tips Meninggalkan Motor Jangka Waktu Lama"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  TIPS | Berkendara Motor Listrik Yang Aman Dan Nyaman
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="12"
+                    data-title="TIPS | Berkendara Motor Listrik Yang Aman Dan Nyaman"
+                    data-deskripsi="Bertumbuhnya penjualan motor listrik rupanya harus dibarengi dengan tata cara dan kebiasaan para konsumen roda dua dalam menghadapi perubahan zaman."
+                    data-link="https://www.youtube.com/embed/JnMJg_o5qfI?si=n4CARG2F2XDS0o5v"
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="12"
+                    data-title="TIPS | Berkendara Motor Listrik Yang Aman Dan Nyaman"
+                    data-deskripsi="Bertumbuhnya penjualan motor listrik rupanya harus dibarengi dengan tata cara dan kebiasaan para konsumen roda dua dalam menghadapi perubahan zaman."
+                    data-link="https://www.youtube.com/embed/JnMJg_o5qfI?si=n4CARG2F2XDS0o5v"
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="12"
+                    data-title="TIPS | Berkendara Motor Listrik Yang Aman Dan Nyaman"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  Oli Mesin Telat Ganti, Mesin Bisa Jadi Korban
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="13"
+                    data-title="Oli Mesin Telat Ganti, Mesin Bisa Jadi Korban"
+                    data-deskripsi="Menunda penggantian oli mesin bukan hanya mengurangi performa, tetapi juga dapat merusak mesin Anda. Video ini akan menjelaskan dampak negatif dari penundaan penggantian oli mesin dan bagaimana hal itu dapat memperpendek umur mesin. Kami akan memberikan panduan langkah demi langkah untuk mengenali tanda-tanda oli mesin yang harus diganti, serta tips untuk menjaga mesin tetap dalam kondisi optimal."
+                    data-link="https://www.youtube.com/embed/tpvZK8xMfEk?si=UDyP61vYf5LxhbUk"
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="13"
+                    data-title="Oli Mesin Telat Ganti, Mesin Bisa Jadi Korban"
+                    data-deskripsi="Menunda penggantian oli mesin bukan hanya mengurangi performa, tetapi juga dapat merusak mesin Anda. Video ini akan menjelaskan dampak negatif dari penundaan penggantian oli mesin dan bagaimana hal itu dapat memperpendek umur mesin. Kami akan memberikan panduan langkah demi langkah untuk mengenali tanda-tanda oli mesin yang harus diganti, serta tips untuk menjaga mesin tetap dalam kondisi optimal."
+                    data-link="https://www.youtube.com/embed/tpvZK8xMfEk?si=UDyP61vYf5LxhbUk"
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="13"
+                    data-title="Oli Mesin Telat Ganti, Mesin Bisa Jadi Korban"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  Tips Cara cek motor bekas /second sebelum membeli
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="14"
+                    data-title="Tips Cara cek motor bekas /second sebelum membeli"
+                    data-deskripsi="Sebelum membeli motor bekas tentunya kita harus cek kondisi motor nya mulai dari mesin,body,surat surat dan lain nya agar tidak menyesal di kemudian hari. Cara ini bisa di terapkan pada motor matic lain nya seperti vario,spacy scoopt beat pop beat street mio j mio soul gt dll."
+                    data-link="https://www.youtube.com/embed/gf92Fs0pUoI?si=nWoUnVqxU4x5ZFkw"
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="14"
+                    data-title="Tips Cara cek motor bekas /second sebelum membeli"
+                    data-deskripsi="Sebelum membeli motor bekas tentunya kita harus cek kondisi motor nya mulai dari mesin,body,surat surat dan lain nya agar tidak menyesal di kemudian hari. Cara ini bisa di terapkan pada motor matic lain nya seperti vario,spacy scoopt beat pop beat street mio j mio soul gt dll."
+                    data-link="https://www.youtube.com/embed/gf92Fs0pUoI?si=nWoUnVqxU4x5ZFkw"
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="14"
+                    data-title="Tips Cara cek motor bekas /second sebelum membeli"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="title-column">
+                  CVT MOTOR MATIC BERISIK = MENCARI DAN MENGATASI MOTOR MATIC
+                  BERISIK KASAR
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn-detail"
+                    title="Detail"
+                    data-id="15"
+                    data-title="CVT MOTOR MATIC BERISIK = MENCARI DAN MENGATASI MOTOR MATIC BERISIK KASAR"
+                    data-deskripsi="Temukan solusi atas masalah CVT motor matic yang berisik dengan panduan kami. Video ini akan memandu Anda melalui proses diagnostik untuk menemukan sumber kebisingan kasar dan langkah-langkah efektif untuk mengatasinya. Dari pemeriksaan komponen hingga tips perawatan, kami akan membantu Anda mengembalikan kenyamanan berkendara Anda."
+                    data-link="https://www.youtube.com/embed/qKOMgspBkhM?si=2OZCr5XoQ5Pe-KNm"
+                    ><i class="bx bxs-info-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-edit"
+                    title="Edit"
+                    data-id="15"
+                    data-title="CVT MOTOR MATIC BERISIK = MENCARI DAN MENGATASI MOTOR MATIC BERISIK KASAR"
+                    data-deskripsi="Temukan solusi atas masalah CVT motor matic yang berisik dengan panduan kami. Video ini akan memandu Anda melalui proses diagnostik untuk menemukan sumber kebisingan kasar dan langkah-langkah efektif untuk mengatasinya. Dari pemeriksaan komponen hingga tips perawatan, kami akan membantu Anda mengembalikan kenyamanan berkendara Anda."
+                    data-link="https://www.youtube.com/embed/qKOMgspBkhM?si=2OZCr5XoQ5Pe-KNm"
+                    ><i class="bx bxs-edit"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="btn-delete"
+                    title="Delete"
+                    data-id="15"
+                    data-title="CVT MOTOR MATIC BERISIK = MENCARI DAN MENGATASI MOTOR MATIC BERISIK KASAR"
+                    ><i class="bx bxs-trash"></i
+                  ></a>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+
+          <div class="pagination">
+            <a href="#" class="page-item">&laquo;</a>
+            <a href="#" class="page-item">&lsaquo;</a>
+            <a href="#" class="page-item">1</a>
+            <a href="#" class="page-item">2</a>
+            <a href="#" class="page-item">3</a>
+            <a href="#" class="page-item">4</a>
+            <a href="#" class="page-item">5</a>
+            <a href="#" class="page-item">&rsaquo;</a>
+            <a href="#" class="page-item">&raquo;</a>
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <h1 class="title-form">Form Tutorial</h1>
+          <form action="#" method="post" id="form">
+            <input type="hidden" name="id" id="id" />
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Judul Video"
+              autocomplete="off"
+              required
+            />
+
+            <input
+              type="text"
+              name="link"
+              id="link"
+              placeholder="Link Video"
+              autocomplete="off"
+              required
+            />
+            <textarea
+              name="deskripsi"
+              id="deskripsi"
+              rows="5"
+              placeholder="Deskripsi Video"
+              autocomplete="off"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal-container" id="modal-container">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Detail Data Tutorial</h2>
+        <table>
+          <tr>
+            <th>Judul</th>
+            <td>:</td>
+            <td class="title"></td>
+          </tr>
+          <tr>
+            <th>Deskripsi</th>
+            <td>:</td>
+            <td class="deskripsi"></td>
+          </tr>
+          <tr>
+            <th>Video</th>
+            <td>:</td>
+            <td class="video">
+              <iframe
+                src=""
+                frameborder="0"
+                title="Youtube Video Player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="assets/js/script-manage-tutorial.js"></script>
+  </body>
+</html>

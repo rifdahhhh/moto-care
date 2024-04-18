@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style-manage-katalog.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img class="logo-img" src="./assets/img/logo.png" alt="" />
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link">
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-pengguna.html" class="nav-link">
+            <span class="nav-item">Manajemen Pengguna</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-booking.html" class="nav-link">
+            <span class="nav-item">Manajemen Booking</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-katalog.html" class="nav-link active">
+            <span class="nav-item">Manajemen Katalog</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-tutorial.html" class="nav-link">
+            <span class="nav-item">Manajemen Tutorial</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logout nav-link">
+            <span class="nav-item">Log Out </span>
+            <i class="bx bx-log-out" style="color: #fffafa"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1 class="title">KATALOG & TUTORIAL</h1>
+
+      <div class="content-wrapper">
+        <div class="table-wrapper">
+          <h1 class="title-table">Daftar Katalog</h1>
+
+          <form action="#" id="form-search">
+            <span class="icon-search"><i class="bx bx-search"></i></span>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Cari Katalog"
+              autocomplete="off"
+            />
+          </form>
+          <table>
+            <thead>
+              <tr>
+                <th>Merk Motor</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <div class="pagination">
+            <a href="#" class="page-item">&laquo;</a>
+            <a href="#" class="page-item">&lsaquo;</a>
+            <a href="#" class="page-item">1</a>
+            <a href="#" class="page-item">2</a>
+            <a href="#" class="page-item">3</a>
+            <a href="#" class="page-item">4</a>
+            <a href="#" class="page-item">5</a>
+            <a href="#" class="page-item">&rsaquo;</a>
+            <a href="#" class="page-item">&raquo;</a>
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <div class="form-merk-motor">
+            <h1 class="title-form">Form Katalog</h1>
+            <form action="#" method="post" id="form-merk-motor"></form>
+          </div>
+          <form action="#" method="post" id="form">
+            <input type="hidden" name="id" id="id" />
+            <div class="row">
+              <input
+                type="text"
+                name="merk"
+                id="merk"
+                placeholder="Merk Motor"
+                autocomplete="off"
+                required
+              />
+
+              <input
+                type="text"
+                name="model"
+                id="model"
+                placeholder="Model Motor"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="row">
+              <input
+                type="file"
+                name="gambar"
+                id="gambar"
+                required
+                class="gambar"
+                accept="image/*"
+              />
+              <label for="gambar" class="label-gambar"
+                ><div><i class="bx bx-plus"></i></div>
+                Tambah Gambar</label
+              >
+              <img
+                src="assets/img/preview.png"
+                class="img-preview"
+                id="img-preview"
+                alt=""
+              />
+            </div>
+            <textarea
+              name="deskripsi"
+              id="deskripsi"
+              rows="5"
+              placeholder="Deskripsi"
+              autocomplete="off"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal-container" id="modal-container">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Detail Data Katalog Motor <span class="title"></span></h2>
+        <table>
+          <tr>
+            <th>Merk</th>
+            <td>:</td>
+            <td class="merk"></td>
+          </tr>
+          <tr>
+            <th>Model</th>
+            <td>:</td>
+            <td class="model"></td>
+          </tr>
+          <tr>
+            <th>Deskripsi</th>
+            <td>:</td>
+            <td class="deskripsi"></td>
+          </tr>
+          <tr>
+            <th>Gambar</th>
+            <td>:</td>
+            <td class="gambar-modal">
+              <img
+                src=""
+                alt="Image Preview Gambar Motor"
+                class="img-preview-modal"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="assets/js/script-manage-katalog.js"></script>
+  </body>
+</html>

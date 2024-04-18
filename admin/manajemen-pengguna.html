@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style-manage-pengguna.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img class="logo-img" src="./assets/img/logo.png" alt="" />
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link">
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-pengguna.html" class="nav-link active">
+            <span class="nav-item">Manajemen Pengguna</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-booking.html" class="nav-link">
+            <span class="nav-item">Manajemen Booking</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-katalog.html" class="nav-link">
+            <span class="nav-item">Manajemen Katalog</span>
+          </a>
+        </li>
+        <li>
+          <a href="manajemen-tutorial.html" class="nav-link">
+            <span class="nav-item">Manajemen Tutorial</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logout nav-link">
+            <span class="nav-item">Log Out </span>
+            <i class="bx bx-log-out" style="color: #fffafa"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <h1 class="title">MANAJEMEN PENGGUNA</h1>
+
+      <div class="table-wrapper">
+        <h1 class="title-table">Daftar Pengguna</h1>
+        <div class="sub-wrapper">
+          <a href="tambah-pengguna.html" class="btn-add"
+            ><i class="bx bx-plus"></i> Tambah Pengguna</a
+          >
+          <form action="#" id="form-search">
+            <span class="icon-search"><i class="bx bx-search"></i></span>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Cari Pengguna"
+              autocomplete="off"
+            />
+          </form>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID Pengguna</th>
+              <th>Nama</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>john_doe123</td>
+              <td>john.doe@example.com</td>
+              <td>User</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="1"
+                  data-nama="John Doe"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jane Smith</td>
+              <td>jane_smith456</td>
+              <td>jane.smith@example.com</td>
+              <td>Admin</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="2"
+                  data-nama="Jane Smith"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Michael Johnson</td>
+              <td>michael_johnson789</td>
+              <td>michael.johnson@example.com</td>
+              <td>User</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="3"
+                  data-nama="Michael Johnson"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Alice Johnson</td>
+              <td>alice_johnson</td>
+              <td>alice.johnson@example.com</td>
+              <td>User</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="4"
+                  data-nama="Alice Johnson"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Robert Brown</td>
+              <td>robert_brown</td>
+              <td>robert.brown@example.com</td>
+              <td>Admin</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="5"
+                  data-nama="Robert Brown"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Sarah Lee</td>
+              <td>sarah_lee</td>
+              <td>sarah.lee@example.com</td>
+              <td>User</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="6"
+                  data-nama="Sarah Lee"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Michael Smith</td>
+              <td>michael_smith</td>
+              <td>michael.smith@example.com</td>
+              <td>User</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="7"
+                  data-nama="Michael Smith"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Emma Davis</td>
+              <td>emma_davis</td>
+              <td>emma.davis@example.com</td>
+              <td>Admin</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="8"
+                  data-nama="Emma Davis"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>James Wilson</td>
+              <td>james_wilson</td>
+              <td>james.wilson@example.com</td>
+              <td>User</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="9"
+                  data-nama="James Wilson"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Olivia Taylor</td>
+              <td>olivia_taylor</td>
+              <td>olivia.taylor@example.com</td>
+              <td>Admin</td>
+              <td>
+                <a href="detail-pengguna.html" class="btn-detail" title="Detail"
+                  ><i class="bx bxs-info-circle"></i
+                ></a>
+                <a href="edit-pengguna.html" class="btn-edit" title="Edit"
+                  ><i class="bx bxs-edit"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-delete"
+                  title="Delete"
+                  data-id="10"
+                  data-nama="Olivia Taylor"
+                  ><i class="bx bxs-trash"></i
+                ></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <a href="#" class="page-item">&laquo;</a>
+          <a href="#" class="page-item">&lsaquo;</a>
+          <a href="#" class="page-item">1</a>
+          <a href="#" class="page-item">2</a>
+          <a href="#" class="page-item">3</a>
+          <a href="#" class="page-item">4</a>
+          <a href="#" class="page-item">5</a>
+          <a href="#" class="page-item">&rsaquo;</a>
+          <a href="#" class="page-item">&raquo;</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      const btnDelete = document.querySelectorAll(".btn-delete");
+      btnDelete.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          const id = this.getAttribute("data-id");
+          const nama = this.getAttribute("data-nama");
+
+          const confirmDelete = confirm(
+            `Apakah anda yakin ingin menghapus pengguna ${nama}?`
+          );
+
+          if (confirmDelete) {
+            window.location.href = `#`;
+          }
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
