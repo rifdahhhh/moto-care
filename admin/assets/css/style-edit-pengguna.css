@@ -178,6 +178,23 @@ form#form select {
   width: 100%;
 }
 
+.row-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 90%; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-image div {
+  width: 65%;
+}
+
+.row-image img {
+  width: 115px;
+}
+
 button.btn-submit {
   display: block;
   text-transform: capitalize;
