@@ -446,6 +446,11 @@ body {
   color: var(--international-orange-engineering);
 }
 
+.active-navbar {
+  background-color: var(--white);
+  color: var(--international-orange-engineering);
+}
+
 /*-----------------------------------*\
   #BOOKING-RIWAYAT
 \*-----------------------------------*/
@@ -1326,7 +1331,7 @@ hr {
   }
 }
 
-@media (min-width: 450px) and (max-width: 768px) {
+@media (min-width: 450px) and (max-width: 991px) {
   h1.title {
     font-size: 30px;
     margin-bottom: 10px;
