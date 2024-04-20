@@ -169,7 +169,7 @@ body {
 }
 
 .section {
-  padding-block: var(--section-padding);
+  padding-block: 30px;
 }
 
 .section-subtitle {
@@ -262,8 +262,6 @@ body {
   0% { transform: translateY(0); }
   100% { transform: translateY(10px); }
 }
-
-.section { padding-block: var(--section-padding); }
 
 .btn-link {
   font-family: var(--ff-Inter);
